@@ -1,5 +1,3 @@
-
-// why to use this in hooks?
 import { useState, useEffect } from 'react';
 import { fetchWeatherData } from '../services/WeatherService';
 

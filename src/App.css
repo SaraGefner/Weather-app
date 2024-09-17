@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #d0e8f2; /* Light blue background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+.weather-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px; /* Adjust card width /
+  position: relative;
+  text-align: right; / Align text to the right for RTL language /
+  direction: rtl; / Right-to-left support */
+}
+
+.weather-card h2 {
+  margin: 0 0 5px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.weather-card p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.weather-card div {
+  font-size: 2em;
+  margin-top: 15px;
+}
+
+ /* Weather icon 
+.weather-card .icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 2.5em; / Larger icon size 
+} 
+
+/* Temperature & Humidity styling */
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.weather-details p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Humidity, Feels Like, and Temperature */
+.weather-card .humidity {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.weather-card .temp {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.weather-card .feels-like {
+  font-size: 1.5em;
+}
+
+/* Small caption for description */
+.weather-card .description {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}

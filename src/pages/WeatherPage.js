@@ -9,18 +9,23 @@ const WeatherPage = () => {
 
   return (
     <div>
-      {weatherData.map(data => (
-        <WeatherCard
-          key={data.id}
-          name={data.name}
-          description={data.weather[0].description}
-          temp={data.main.temp}
-          feels_like={data.main.feels_like}
-          humidity={data.main.humidity}
-        />
-      ))}
+   
+      <h1 className="weather-title">תחזית מסביב לעולם</h1>
+           
+      <div className="weather-grid">
+        {weatherData.map(data => (
+          <WeatherCard
+            key={data.id}
+            name={data.name}
+            description={data.weather[0].description}
+            temp={data.main.temp}
+            feels_like={data.main.feels_like}
+            humidity={data.main.humidity}
+          />
+        ))}
+      </div>
     </div>
   );
 };
-
 export default WeatherPage;
+

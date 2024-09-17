@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const apiKey = '8ee633956bad6ae1965b557a94ecfcba '; 
+const apiKey = 'be6fae16fc4ddb3ef4dd14a22077333d'
 export const fetchWeatherData = async (locations) => {
   const promises = locations.map(location =>
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}&lang=en`)
   );
   const results = await Promise.all(promises);
   return results.map(result => result.data);
 };
-export default fetchWeatherData
+export default fetchWeatherData;

@@ -4,12 +4,15 @@ import Weather from '../pages/WeatherPage';
 
 const Router = () => {
   return (
+    
     <BrowserRouter>
       <Routes>
         <Route path="/weather" element={<Weather />} />
       </Routes>
     </BrowserRouter>
-  );
+
+    
+   );
 };
 
 export default Router;
