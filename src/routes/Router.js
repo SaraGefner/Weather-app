@@ -10,7 +10,6 @@ const Router = () => {
         <Route path="/weather" element={<Weather />} />
       </Routes>
     </BrowserRouter>
-
     
    );
 };

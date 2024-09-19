@@ -9,7 +9,7 @@ const WeatherPage = () => {
 
   return (
     <div>
-   
+    
       <h1 className="weather-title">תחזית מסביב לעולם</h1>
            
       <div className="weather-grid">
@@ -28,4 +28,3 @@ const WeatherPage = () => {
   );
 };
 export default WeatherPage;
-

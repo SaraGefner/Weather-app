@@ -9,6 +9,7 @@ const WeatherCard = ({ name, description, temp, feels_like, humidity }) => {
     if (feels_like <= 30) return <FaCloud />;
     return <FaSun />;
   };
+
   const translateCity = (city) => {
     const cityTranslations = {
       "Alaska": "אלסקה",
@@ -16,8 +17,9 @@ const WeatherCard = ({ name, description, temp, feels_like, humidity }) => {
       "London": "לונדון",
       "Eilat": "אילת"
     };
-    return cityTranslations[city] || city; // Fallback to English if no translation
+    return cityTranslations[city] || city; 
   };
+  
   const translateWeather = (description) => {
     const translations = {
       "clear sky": "שמיים בהירים",
@@ -57,7 +59,7 @@ const WeatherCard = ({ name, description, temp, feels_like, humidity }) => {
       "violent storm": "סערה אלימה",
       "extreme storm": "סערה קיצונית"
     };
-    return translations[description] || description; // Fallback to English if no translation
+    return translations[description] || description;
   };
 
   return (
